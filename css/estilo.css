@@ -1,0 +1,156 @@
+#principal{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo>h2{
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30pt;
+}
+.titulo>p{
+    text-align: center;
+    color: gray;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 15pt;
+    padding-bottom: 20px;
+}
+
+.card_flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card1{
+    text-align: center;
+    padding: 30px;
+    width: 350px;
+    height: 200px;
+    /* margin-top: 150px; */
+    border-top: 3px solid rgb(75, 182, 211);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card2{
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    border-top: 3px solid rgb(197, 60, 60);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card3{
+    text-align: center;
+    padding: 30px;
+    width: 300px;
+    height: 200px;
+    border-top: 3px solid rgb(213, 141, 24);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.card4{
+    text-align: center;
+    padding: 30px;
+    width: 350px;
+    height: 200px;
+    /* margin-top: 150px; */
+    border-top: 3px solid rgb(41, 182, 98);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.card1>img{
+    width: 50px;
+}
+.card2>img{
+    width: 50px;
+}
+.card3>img{
+    width: 50px;
+}
+.card4>img{
+    width: 50px;
+ 
+}
+@media (max-width: 1072px){
+    .principal{
+        max-width: 600px;
+    }
+    .card_flexbox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card2_3{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        order: 1;
+    }
+    .card1, .card4{
+        order: 2;
+        flex-direction: row;
+        width: 300px;
+    }
+    .card4{
+        order: 3;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .card_flexbox{
+        margin:0 auto;
+        flex-wrap: wrap;
+    }
+    .card2_3{
+        flex-direction: column;
+    }
+    .titulo{
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .titulo>p{
+        width: 300px;
+        text-align: center;
+    }
+    
+} 
+@media (max-width: 360px){
+    .card_flexbox{
+        margin:0 auto;
+        flex-wrap: wrap;
+    }
+    .card2_3{
+        flex-direction: column;
+    }
+    .titulo>h2{
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 19pt;
+        padding-bottom: 10px;
+    }
+    .titulo>p{
+        width: 200px;
+        font-size: 10pt;
+        text-align: center;
+    }
+    .card1{
+        width: 250px;
+    }
+    .card4{
+        width: 250px;
+    }
+    .card2{
+        width: 250px;
+    }
+    .card3{
+        width: 250px;
+    }
+}
